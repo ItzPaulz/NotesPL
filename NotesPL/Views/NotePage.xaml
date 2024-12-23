@@ -7,10 +7,20 @@
     <ContentPage.BindingContext>
         <viewModels:NoteViewModel />
     </ContentPage.BindingContext>
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Spacing="10" Margin="5">
+        <Editor x:Name="TextEditor"
+                Placeholder="Enter your note"
+                Text="{Binding Text}"
+                HeightRequest="100" />
+
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
+            <Button Text="Save"
+                    Command="{Binding SaveCommand}"/>
+
+            <Button Grid.Column="1"
+                    Text="Delete"
+                    Command="{Binding DeleteCommand}"/>
+
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>

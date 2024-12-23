@@ -7,10 +7,14 @@
     <ContentPage.BindingContext>
         <viewModels:AboutViewModel />
     </ContentPage.BindingContext>
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <Image Source="paul.jpg"
+               SemanticProperties.Description="Estudiante de software apasionado"
+               HeightRequest="200" />
+        <Label Text="ESTUDIANTE DE SOFTWARE 5TO SEMESTRE QUE LE GUSTAN LOS DEPORTES, LOS VIDEOJUEGOS Y APRENDER COSAS NUEVAS"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Margin="10" />
     </VerticalStackLayout>
 </ContentPage>
