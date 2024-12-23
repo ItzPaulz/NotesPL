@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotesPL.Views.AboutPage"
              xmlns:viewModels="clr-namespace:NotesPL.ViewModels"
-             Title="Paul Larrea">
+             Title="Paul Larrea"
+             BackgroundColor="MediumPurple">
     <ContentPage.BindingContext>
         <viewModels:AboutViewModel />
     </ContentPage.BindingContext>
